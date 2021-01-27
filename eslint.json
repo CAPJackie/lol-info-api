@@ -1,0 +1,29 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "standard",
+    "prettier",
+    "prettier/standard",
+    "plugin:jest/recommended"
+  ],
+  "rules": {
+    "promise/catch-or-return": "error",
+    "prettier/prettier": [
+      "error",
+      {
+        "semi": false
+      }
+    ]
+  },
+
+  "plugins": ["prettier", "jest"],
+
+  "parser": "babel-eslint",
+
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "env": {
+    "node": true
+  }
+}
